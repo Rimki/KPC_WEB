@@ -1,0 +1,46 @@
+<!--step11_weight.html-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Weight</title>
+    <style>
+        li {
+            /* 1점 */
+            background-color: yellow;
+        }
+
+        ul li {
+            /* 2점 */
+            background-color: green;
+        }
+
+        .active {
+            /* 10점 */
+            background-color: blue;
+        }
+
+        #one {
+            /* 100점 */
+            /* background-color: pink; */
+            /* 10000점 */
+            background-color: brown !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="nav">
+            <ul>
+                <!-- 1000점 -->
+                <li class="active" id="one" style="background-color: red;">
+                    하나</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
