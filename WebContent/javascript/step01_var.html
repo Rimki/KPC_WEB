@@ -1,0 +1,72 @@
+<!--step01_var.html-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javasscript Variable</title>
+    <script>
+        var num1 = 9999;
+        var num1 = 1000; //var는 이중선언가능
+
+        console.log(num1);
+
+        var myName = 'rimki';
+        var multiName = `my name is rimki.
+        who are you?`; //es6에서 추가된 문자열 표기법
+
+        console.log(multiName);
+        // 자료형 확인
+
+        var test;
+        console.log(typeof num1);
+        console.log(typeof multiName);
+        console.log(typeof test);//undefined
+        console.log(typeof ourName);
+        var ourName = "kpc"
+        console.log(typeof ourName);//variable hoisting
+
+        foo();//function hoisting
+        function foo() {
+            console.log('function foo()');
+        }
+        console.log(typeof foo);
+
+        let a1 = 1000;//let 이중선언,hoisting 안됨
+
+        var b1 = 10;
+        console.log(b1);
+        if (true) {
+            var b1 = 20;
+            console.log(b1);
+        }
+        console.log(b1);
+
+        let c1 = 10;
+        console.log(c1);
+        if (true) {
+            let c1 = 20;
+            console.log(c1);
+        }
+        console.log(c1);
+
+        const d1 = 10; //상수
+
+        const e1 = [1, 2];
+        e1.push(3);//const는 complex type일때는 객체의 구성요소가 바뀌는 것은 괜찮음
+        console.log(e1);
+
+        // 1. primitive type => let
+        // 2. primitive type중에서 상수가 필요할때는 const
+        // 3. complex type => const
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
